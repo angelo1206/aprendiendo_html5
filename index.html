@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mi primer pagina</title>
+  <<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Hola mundo</h1>
+  <h2>chao mundo</h2>
+  <h3>prueba 3</h3>
+  <h4>heading 4</h4>
+  <h5>heading 5</h5>
+  <h6>heading 6</h6><br>
+  <fieldset>
+    <h5>Ejemplo de la etiqueta template</h5>
+    <p>Dar click para poder ver el contenido oculto en este elemento</p>
+    <button onclick="showContent()">Show hidden content</button>
+    <template>
+      <h2>Leon</h2>
+      <img src="leon.jpg" width="214" height="204">
+    </template>
+    <script>
+    function showContent() {
+      var temp = document.getElementsByTagName("template")[0];
+      var clon = temp.content.cloneNode(true);
+      document.body.appendChild(clon);
+    }
+    </script>
+
+  </fieldset>
+  <fieldset>
+    <h4>Ejemplo de la etiqueta small</h4>
+    <p>Esto es un texto normal.</p>
+    <p><small>Esto es un pequeño.</small></p>
+  </fieldset>
+  <fieldset>
+    <h2>Ejemplo etiqueta progress</h2>
+    <label for=""><q>Progreso aprendido</label>
+    <progress value="1500" max="2000">0%</progress>
+  </fieldset>
+  <fieldset>
+    <h1>Ejemplo de la etiqueta pre</h1>
+    <pre>
+      <b>DISPOSITIVOS DE SALIDA</b><br>
+      <hr> 1. Disquete:
+                      Disposotivo de almacenimiento<br> 2. Disco duro:
+                      <s>Dispositivo de almacenimiento importante</s>
+    </pre>
+  </fieldset>
+  <fieldset>
+    <h1>Ejemplo etiqueta meter</h1>
+    <label for="carga">carga:</label>
+    <meter value="80" min="0" max="100"></meter>
+  </fieldset>
+  <fieldset>
+    <h1>Ejemplo de palabras con abreviatura</h1>
+    <p>Aprender <abbr title="Hypertext Markup Language">HTML</abbr> es genial</p>
+  </fieldset>
+
+
+  <div>
+    <fieldset>
+      <h1>Calculadora Automatica Suma</h1>
+      <form oninput="resultado.value=parseInt(x. value) + parseInt(y . value)">
+        <input type="number" name="x" />
+        <input type="number" name="y" />
+        <output name="resultado" for="x y"> </output> <= Resultado<br><br><br>
+
+    </fieldset><br><br>
+
+
+    </form>
+  </div>
+
+  <h2>Ejemplo como cargar un FRAME</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hAgrrW5LM6M"></iframe><br><br>
+
+  <for >
+
+    <fieldset>
+      <legend> Datos personales</legend>
+
+      <label for="iname">NOMBRE:</label>
+      <input type="text" name="" id="name"><br>
+      <label for="lastname">APELLIDO:</label>
+      <input type="text" name="" id="lastname"><br>
+      <label for="iemail">EMAIL:</label>
+      <input type="iemail" name="" id="EMAIL"><br>
+      <label for="ipass">PASSWORD:</label>
+      <input type="password" name="" id="password"><br><br>
+
+    </fieldset>
+    <h1>Ejemplo Iframe</h1>
+    <iframe src="https://es.wikipedia.org/wiki/Wikipedia:Portada" width="500" height="800"></iframe>
+
+    <fieldset>
+      <input type="radio" name="color" id="red"
+      value="red">
+      <label for="red">rojo</label>
+
+      <input type="radio" name="color" id="azul"
+      value="azul">
+      <label for="azul">azul</label>
+
+      <input type="radio" name="color" id="negro"
+      value="negro">
+      <label for="negro">negro</label><br>
+
+      <input type="checkbox" name="color" id="red"
+      value="red">
+      <label for="red">rojo</label>
+
+      <input type="checkbox" name="color" id="azul"
+      value="azul">
+      <label for="azul">azul</label>
+
+      <input type="checkbox" name="color" id="negro"
+      value="negro">
+      <label for="negro">negro</label><br>
+
+      <input type="button" onclick="alert('hola')"
+      value="Boton!"><br>
+
+      <input type="date" name="date"><br>
+
+      <input type="datetime-local" name="date"><br>
+
+      <input type="file" name="archivo"><br>
+
+      <input type="number" name="numeros"><br>
+
+      <input type="range" name="rango" min="0" max="5"><br>
+
+      <input type="search" name="buscador"><br>
+
+      <br>
+
+      <textarea cols="50" rows="10"></textarea><br>
+
+      <input type="submit" name="boton enviar" value="Enviar comentarios"><br>
+
+      <button name="boton2" id="idboton2">Boton dos</button><br>
+    </fieldset>
+
+    <fieldset>
+      <select>
+        <optgroup label="Generos Musicales">
+          <option selected>Selecciona</option>
+          <option value="">Vallenato</option>
+          <option value="">Rock</option>
+          <option value="">popular</option>
+          <option value="">romantica</option>
+        </optgroup>
+      </select><br>
+
+      <input type="list" list="generos">
+      <datalist id="generos">
+
+        <option value="Vallenato"></option>
+        <option value="Rock"></option>
+        <option value="popular"></option>
+        <option value="romantica"></option>
+
+      </datalist>
+    </fieldset><br><br>
+
+    <fieldset>
+      <h1>Ejemplo de tablas</h1>
+      <table border="1">
+
+        <caption>Horario de clases</caption>
+        <colgroup>
+          <col span="2" bgcolor="blue;">
+          <col span="1" bgcolor"tomato">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td colspan="2">matematicas</td>
+            <td rowspan="2">sociales</td>
+            <td>español</td>
+            <td>ingles</td>
+
+          </tr>
+
+          <tr>
+            <td>matematicas</td>
+            <td>sociales</td>
+            <td>español</td>
+            <td>ingles</td>
+
+          </tr>
+
+          <tr>
+            <td>matematicas</td>
+            <td>sociales</td>
+            <td>español</td>
+            <td>ingles</td>
+            <td>fisica</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td>Total dias de estudio 5</td>
+        </tfoot>
+
+      </table>
+
+    </fieldset>
+
+
+  </for>
+
+  <div>
+    <h1>Ejemplo etiqueta blockquote</h1>
+    <p>esta pagina es de pruebas creada por:</p>
+    <blockquote cite="http://">
+      <cite>
+      <p id="parrafo especial">Hola soy angelo. <br> y tengo <del>36</del> <ins>37</ins>! años</p>
+      </cite>
+    </blockquote>
+  </div>
+
+  <hr>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <a href="https://google.com.co" target="_blank">Soy un link a google</a>
+
+  <img src="leon.jpg" alt="leon">
+
+  <div>
+    <h2>Soy un titulo dentro de un div</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div><br><br><br>
+
+  <address class="">
+    MANUEL ANGELO LOPEZ CASTAÑEDA<BR>
+    BOGOTA COLOMBIA
+
+  </address>
+
+</body>
+</html>
